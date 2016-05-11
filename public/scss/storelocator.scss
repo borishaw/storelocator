@@ -1,0 +1,206 @@
+// General Page Styling
+
+$font-stack: 'Montserrat', "Helvetica Neue",Helvetica,Arial,sans-serif;
+$c-red: #D5373B;
+
+
+h1 {
+	font-family: $font-stack;
+	text-align: center;
+	margin: 70px 0 40px;
+}
+
+
+// Provided by Google
+
+.storelocator-panel {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  .store-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		overflow: auto;
+		height: 100%;
+		&::-webkit-scrollbar {
+			width: 10px;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: #d2d2d2;
+		}
+		&::-webkit-scrollbar-thumb{
+			background-color: $c-red;
+		}
+		li {
+			padding: 15px;
+			border-bottom: 1px solid #cccccc;
+			&.store {
+				&:hover {
+					cursor: pointer;
+					background: #eee;
+				}
+			}
+			&.highlighted {
+				background: $c-red;
+				color: #fff;
+				.store > div:before {
+					color: #fff;
+				}
+				&:hover {
+					background: $c-red;
+				}
+			}
+		}
+		.no-stores {
+			color: grey;
+		 }
+		 .store {
+			.features {
+				display: none;
+			}
+		 }
+	 }
+	 .directions-panel {
+		padding: 5px;
+		font-size: 0.8em;
+	 }
+	 .directions {
+		display: none;
+	 }
+	 .location-search {
+		padding: 10px;
+		background: #E8E8E8;
+		border-bottom: 1px solid #ccc;
+		input {
+			width: 95%;
+			border: none;
+			padding: 2px 5px;
+		}
+		h4 {
+			font-size: 11px;
+			margin: 0;
+			padding: 0;
+			text-transform: uppercase;
+			margin-bottom: 5px;
+			color: #AFAFAF;
+			font-weight: 400;
+		}
+	 }
+	 .feature-filter {
+		overflow: hidden;
+		label {
+			display: block;
+			font-size: 0.8em;
+			margin: 0 0.4em;
+			float: left;
+		}
+	 }
+}
+
+.store {
+	.title {
+		font-weight: 700;
+		border-bottom: 1px solid #d2d2d2;
+		padding-bottom: 5px;
+		margin-bottom: 10px;
+	}
+	.address,
+	.phone,
+	.web,
+	.misc {
+	  font-size: 80%;
+	  margin-top: 0.2em;
+	  margin-bottom: 0.5em;
+	  display: block;
+	}
+	.address,
+	.phone {
+		padding-left: 22px;
+		&:before {
+			font-family: 'fontAwesome';
+			content: '\f041';
+			float: left;
+			margin-left: -20px;
+			font-size: 15px;
+			color: #AFAFAF;
+		}
+	}
+	.phone:before {
+		content: '\f095';
+	}
+	.web {
+		a {
+			color: green;
+		}
+	}
+	.features {
+		overflow: hidden;
+		color: grey;
+		margin: 0;
+		padding: 0;
+		font-size: 70%;
+		max-width: 250px;
+		li {
+			display: inline;
+			float: left;
+			padding-right: 0.8em;
+		}
+	 }
+	 .action {
+		font-size: 0.8em;
+		color: $c-red;
+		border-left: 1px solid #d2d2d2;
+		padding: 0 3px;
+		&:first-of-type {
+			border-left: none;
+			padding-left: 0;
+		}
+	 }
+}
+
+
+
+// New Custom Code
+
+#map-canvas {
+	height: 500px;
+}
+#panel {
+	width: 100%;
+	.feature-filter label {
+		width: 130px;
+	}
+}
+
+
+// Responsive
+
+@media screen and (min-width: 992px) {
+	// Desktop styling
+	.col-map {
+		float: right;
+	}
+	
+	#panel {
+		height: 500px;
+	}
+	
+}
+
+@media screen and (max-width: 992px) {
+	// Tablet Styling
+	
+	#panel {
+		margin: 20px 0;
+	}
+	
+}
+
+@media screen and (max-width: 480px) {
+	// Phone Styling
+	
+	.col-map {
+		padding: 0;
+	}
+	
+}

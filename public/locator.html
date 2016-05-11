@@ -3,21 +3,43 @@
 <head>
     <meta charset="utf-8">
     <title>Store locator with Panel</title>
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
-    </script>
-    <script src="store-locator.min.js"></script>
-    <script src="locator.js"></script>
-    <link rel="stylesheet" href="storelocator.css">
-    <style>
-        #map-canvas, #panel { height: 500px; }
-        #panel { width: 300px; float: left; margin-right: 10px; }
-        #panel .feature-filter label { width: 130px; }
-    </style>
+	 
+	 
+	 <!-- CSS Styles -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	 <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/storelocator.css">
+
 </head>
 <body>
-<h1>Hans Dairy Store Locator</h1>
-<div id="panel"></div>
-<div id="map-canvas"></div>
+	
+
+	
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Hans Dairy Store Locator</h1>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-8 col-lg-9 col-map">
+				<div id="map-canvas"></div>
+			</div>
+			<div class="col-md-4 col-lg-3 col-desc">
+				<div id="panel"></div>
+			</div>
+		</div>
+		
+	</div>
+	
+
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="store-locator.min.js"></script>
+    <script src="locator.js"></script>
 </body>
 </html>
