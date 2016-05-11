@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Store locator with Panel</title>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js">
+    </script>
+    <script src="store-locator.min.js"></script>
+    <script src="locator.js"></script>
+    <link rel="stylesheet" href="storelocator.css">
+    <style>
+        #map-canvas, #panel { height: 500px; }
+        #panel { width: 300px; float: left; margin-right: 10px; }
+        #panel .feature-filter label { width: 130px; }
+    </style>
+</head>
+<body>
+<h1>Hans Dairy Store Locator</h1>
+<div id="panel"></div>
+<div id="map-canvas"></div>
+</body>
+</html>

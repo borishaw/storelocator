@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - hd_stores@localhost" uuid="834d0ab2-2e2c-4ca7-afe7-5b9cd9421f6c">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>hd_stores.*</schema-pattern>
+      <default-schemas>hd_stores.*</default-schemas>
+    </data-source>
+  </component>
+</project>

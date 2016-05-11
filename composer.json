@@ -1,0 +1,7 @@
+{
+    "require": {
+        "sergeytsalkov/meekrodb": "^2.3",
+        "league/csv": "^8.0",
+        "willdurand/geocoder": "^3.3"
+    }
+}
