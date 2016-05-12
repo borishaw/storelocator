@@ -41,6 +41,7 @@ google.maps.event.addDomListener(window, 'load', function () {
     dataFeed.setStores(stores);
 
     var view = new storeLocator.View(map, dataFeed, {
+        markerIcon: "img/map-icon.png",
         geolocation: true
     });
 
