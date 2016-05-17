@@ -21,13 +21,13 @@
         <data-type>varchar(255)</data-type>
       </column>
       <column id="6" parent="2" name="address">
-        <data-type>blob</data-type>
+        <data-type>text</data-type>
       </column>
       <column id="7" parent="2" name="city">
         <data-type>varchar(255)</data-type>
       </column>
       <column id="8" parent="2" name="province">
-        <data-type>tinyblob</data-type>
+        <data-type>char(2)</data-type>
       </column>
       <column id="9" parent="2" name="postal_code">
         <data-type>varchar(255)</data-type>
@@ -35,7 +35,21 @@
       <column id="10" parent="2" name="tel">
         <data-type>varchar(255)</data-type>
       </column>
-      <key id="11" parent="2" name="PRIMARY">
+      <column id="11" parent="2" name="x_coordinate">
+        <data-type>float</data-type>
+      </column>
+      <column id="12" parent="2" name="y_coordinate">
+        <data-type>float</data-type>
+      </column>
+      <column id="13" parent="2" name="year_round">
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="14" parent="2" name="seasonal">
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="15" parent="2" name="PRIMARY">
         <columns>store_id</columns>
         <primary>1</primary>
       </key>
