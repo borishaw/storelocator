@@ -1,0 +1,145 @@
+/*------------------------------------------------------------------------
+# JA Rochea - May, 2007
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2006 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+-------------------------------------------------------------------------*/
+
+body#bd {
+	background: url(../../images/dark/body-bg.gif) repeat-x top left #425252;
+}
+
+/* Normal link */
+a {
+	color: #D25D23;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: #4F4F4F;
+}
+
+a.readon {
+	background: url(../../images/dark/readon.gif) no-repeat top;
+}
+
+a.readon:hover, a.readon:active, a.readon:focus {
+	background: url(../../images/dark/readon.gif) no-repeat bottom;
+}
+
+a.mainlevel#active_menu {
+	color: #D25D23;
+}
+
+#ja-wrapper {
+	border-left: 1px solid #202A2A;
+	border-right: 1px solid #202A2A;
+}
+
+#ja-header {
+	background: url(../../images/dark/mainnav-bg.gif) repeat-x top;
+}
+
+#ja-header h1 {
+	background: url(../../images/dark/logo.gif) no-repeat;
+}
+
+#ja-mainnav a {
+	color: #FFFFFF;
+	border-left: 2px solid #333333;
+}
+
+/* Bignumber */
+.bignumber {
+	background: url(../../images/dark/ol-bg.gif) no-repeat top left;
+}
+
+/* Dropcap hilite */
+.dropcap-hilite {
+	background: #425252;
+}
+
+/* Check list */
+ul.checklist li {
+	background: url(../../images/dark/checklist-bg.gif) no-repeat 0px 0px;
+}
+
+/* Note Style */
+div.stickynote {
+	border: 1px solid #B3C1C1;
+}
+
+div.stickynote p {
+	color: #4F4F4F;
+	background: url(../../images/dark/sticky-bg.gif) no-repeat left center #FFFFFF;
+	border: 2px solid #E0E6E6;
+}
+
+div.pinnote {
+	border: 1px solid #B3C1C1;
+}
+
+div.pinnote p {
+	color: #4F4F4F;
+	background: url(../../images/dark/pin-bg.gif) no-repeat left center #FFFFFF;
+	border: 2px solid #E0E6E6;
+}
+
+div.contact {
+	border: 1px solid #B3C1C1;
+}
+
+div.contact p {
+	color: #4F4F4F;
+	background: url(../../images/dark/contact-bg.gif) no-repeat left center #FFFFFF;
+	border: 2px solid #E0E6E6;
+}
+
+div.download {
+	border: 1px solid #B3C1C1;
+}
+
+div.download p {
+	color: #4F4F4F;
+	background: url(../../images/dark/download-bg.gif) no-repeat left center #FFFFFF;
+	border: 2px solid #E0E6E6;
+}
+
+div.quote-hilite {
+	background: url(../../images/dark/q1_std2.gif) no-repeat 20px 10px #FCF4F0;
+	border:1px dotted #DF875C;
+}
+
+div.quote-hilite blockquote {
+	color: #D25D23;
+	background: url(../../images/dark/q2_std2.gif) no-repeat right bottom;
+}
+
+#ja-footer {
+	background: url(../../images/dark/footer-left-bg.gif) repeat-y 170px 0 #222D2D;
+}
+
+.wide #ja-footer {
+	background: url(../../images/dark/footer-left-bg.gif) repeat-y 214px 0 #222D2D;
+}
+
+#ja-footer a:hover,
+#ja-footer a:active,
+#ja-footer a:focus {
+	color: #999999;
+}
+
+/* SUCKERFISH MENU
+-----------------------------------*/
+#ja-cssmenu ul li:hover,
+#ja-cssmenu ul ul li:hover,
+#ja-cssmenu ul li.sfhover,
+#ja-cssmenu ul li.havesubchildsfhover,
+#ja-cssmenu ul li.havesubchild-activesfhover,
+#ja-cssmenu ul ul li.sfhover,
+#ja-cssmenu ul ul li.havesubchildsfhover,
+#ja-cssmenu ul ul li.havesubchild-activesfhover {
+	background: none #425252;
+}

@@ -1,0 +1,112 @@
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #d5363b;
+	z-index: 61;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 18px;
+	height: 16px;
+	position: absolute;
+	right: 45px;
+	top: 55px;
+	overflow: hidden;
+	border: none;
+	background: url(../img/cross.png) no-repeat center center;
+	background-size: 100%;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	margin-top: 7%;
+}
+
+.overlay ul.nav {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+}
+
+.overlay ul.nav li {
+	display: block;
+	/*height: 20%;
+	height: calc(100% / 5);*/
+	min-height: 54px;
+}
+
+.overlay ul.nav li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul.nav li a:hover,
+.overlay ul.nav li a:focus {
+	color:rgba(122,0,4,0.8);
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+	margin-top: 0px;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul.nav li {
+		min-height: 34px;
+	}
+}

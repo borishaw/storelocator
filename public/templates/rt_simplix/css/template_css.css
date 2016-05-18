@@ -1,0 +1,725 @@
+/* @group Core Elements */
+
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+body,td {
+	line-height: 135%;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+			
+}
+
+body.f-smaller {
+	font-size: 11px;
+}
+
+body,
+body.f-default {
+	font-size: 13px;
+}
+
+body.f-larger {
+	font-size: 15px;
+}
+
+p {
+  /* setup some more readable paragraph spacing */
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+h1, h2, h3, h4, h4 {
+	/* setup some more readable header spacing */
+	padding-bottom: 5px;
+	margin: 15px 0;
+}
+
+h1 { 
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 175%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+h4 {
+	font-size: 120%;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* @end */
+
+/* @group Joomla Elements */
+
+.small,
+.modifydate,
+.createdate,
+div.mosimage_caption {
+	font-size: 95%;
+}
+
+.componentheading {
+	font-size: 150%;
+}
+
+#mainframe td.contentheading {
+	font-size: 200%;
+	padding-left: 25px;
+	width: 100%%;
+}
+
+#mainframe td.column_separator {
+	padding-left: 15px;
+}
+
+body.f-smaller #mainframe td.contentheading {
+	background-position: 0 5px;
+}
+
+body.f-default #mainframe td.contentheading {
+	background-position: 0 7px;
+}
+
+body.f-larger #mainframe td.contentheading {
+	background-position: 0 9px;
+}
+
+.componentheading {
+	padding: 10px 5px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+td.componentheading {
+	padding-bottom: 15px;
+}
+
+#mainframe td.sectiontableheader {
+	font-weight: bold;
+	padding: 4px 2px;
+}
+
+.sectiontableentry1,
+.sectiontableentry2 {
+	text-align: left;
+	padding: 2px 0;
+}
+
+.contentpane,
+.contentpaneopen {
+	width: 100%;
+}
+
+/* @end */
+
+/* @group Structure */
+
+div.wrapper {
+	margin: 0 auto;	
+	text-align: left;
+}
+
+div#header {
+	height: 111px;
+}
+
+#header .wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+img#logo {
+	position: absolute;
+	top: 18px;
+	width: 233px;
+	height: 75px;
+}
+
+div#horiz-menu {
+	position: relative;
+	margin-left: 260px;
+	top: 32px;
+}
+
+div#sub-menu {
+	position: absolute;
+	left: 262px;
+	top: 75px;
+}
+
+div#transparent {
+	position: relative;
+	z-index: 5;
+}
+
+div#pathway {
+	float: left;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+div#mod-top {
+	float: right;
+	height: 30px;
+	margin-bottom: 15px;
+}
+
+#transparent div#mainbody,
+#transparent div.padding {
+	clear: both;
+	padding-bottom: 5px;
+}
+
+div#inset1 {
+	background: url(../images/inset.png);
+	padding: 5px;
+	margin: 0;
+}
+
+div#inset2 {
+	background: url(../images/inset.png);
+	padding: 0;
+	margin: 0;
+}
+
+div#divider {
+	background: url(../images/body-div.png);
+	height: 8px;
+	overflow: hidden;
+}
+
+div.section {
+	background: url(../images/body-bg.png) repeat-x;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+div.section .padding {
+	margin-left: -25px;
+}
+
+div#transparent .padding {
+	margin-left: -30px;
+}
+
+div.section td.section,
+#mainframe td.fixed {
+	padding-left: 20px;
+}
+
+/* @end */
+
+/* @group Table Control */
+
+#mainframe {
+	width: 100%;
+}
+
+table.sections {
+	width: 100%;
+}
+
+#mainframe td,
+.sections td {
+	padding: 0;
+}
+
+td.fixed {
+	padding-left: 20px;
+	width: 225px;
+}
+
+td.w24 {
+	width: 25%;
+}
+
+td.w33 {
+	width: 33%;
+}
+
+td.w49 {
+	width: 50%;
+}
+
+td.w99 {
+	width: 100%;
+}
+
+#mainframe td.spacer,
+.sections td.spacer,
+#glass .sections td.spacer,
+#smoke .sections td.spacer {
+	width: 20px;
+	background: none;
+	border: 0;
+}
+
+td.spacer img {
+	width: 20px;
+}
+
+#mainframe tr {
+	vertical-align: top;
+}
+
+/* @end */
+
+
+
+/* @group Login/Logout */
+
+.loginelement {
+	width: 150px;
+	float:  left;
+	padding: 3px 15px;
+	line-height: 25px;
+	white-space: nowrap;
+}
+
+.loginelement label {
+	font-weight: normal;
+
+}
+
+.loginelement  .inputbox {
+	width:  75px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+span.loginsubmit,
+span.logoutsubmit {
+	display: block;
+	float:  left;
+	background: url(../images/login-button.png) 0 50% no-repeat;
+	width: 53px;
+	height:  23px;
+	line-height: 23px;
+	text-align: center;
+	font-weight: normal;
+	margin-top: 5px;
+	margin-left: -10px;	
+	cursor: pointer;
+} 
+
+span.loginsubmit span,
+span.logoutsubmit span {
+	text-decoration: none;
+}
+
+/* @end */
+
+/* @group Modules */
+
+.moduletable,
+.module {
+	margin: 0;
+	padding: 10px 10px 30px 10px;
+}
+
+.module-hilite1a,
+.module-hilite1b,
+.module-hilite1c,
+.module-hilite2a,
+.module-hilite2b,
+.module-hilite2c {
+	margin: 0;
+	padding: 0 10px 30px 10px;
+}
+
+.moduletable h3,
+.module h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+.moduletable h3,
+.moduletable-hilite1a h3,
+.moduletable-hilite1b h3,
+.moduletable-hilite1c h3, 
+.moduletable-hilite2a h3,
+.moduletable-hilite2b h3,
+.moduletable-hilite2c h3,
+.moduletable-hilite3a h3,
+.moduletable-hilite3b h3,
+.moduletable-hilite3c h3,
+.moduletable-hilite4a h3,
+.moduletable-hilite4b h3,
+.moduletable-hilite4c h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+	padding: 0;
+	padding-left: 25px;
+}
+
+.moduletable,
+.moduletable-hilite1a,
+.moduletable-hilite1b,
+.moduletable-hilite1c, 
+.moduletable-hilite2a,
+.moduletable-hilite2b,
+.moduletable-hilite2c,
+.moduletable-hilite3a,
+.moduletable-hilite3b,
+.moduletable-hilite3c,
+.moduletable-hilite4a,
+.moduletable-hilite4b,
+.moduletable-hilite4c{
+	padding: 15px 15px 25px 15px;
+}
+
+div#inset1 .moduletable {
+	padding: 10px 10px 30px 10px;	
+}
+
+.module h3 {
+	height: 30px;
+	line-height: 30px;
+	background: url(../images/title-bg1.png) 0 0 no-repeat;
+	padding: 0 0 0 7px
+}
+
+.module-hilite3a div div div,
+.module-hilite3b div div div,
+.module-hilite3c div div div,
+.module-hilite4a div div div,
+.module-hilite4b div div div,
+.module-hilite4c div div div {
+	padding: 10px 10px 10px 10px;
+	color: #eee;
+}
+
+.module-hilite3a div div div div,
+.module-hilite3b div div div div,
+.module-hilite3c div div div div,
+.module-hilite4a div div div div,
+.module-hilite4b div div div div,
+.module-hilite4c div div div div {
+	background: none;
+}
+
+.module-hilite1a h3,
+.module-hilite1b h3,
+.module-hilite1c h3, 
+.module-hilite2a h3,
+.module-hilite2b h3,
+.module-hilite2c h3,
+.module-hilite3a h3,
+.module-hilite3b h3,
+.module-hilite3c h3,
+.module-hilite4a h3,
+.module-hilite4b h3,
+.module-hilite4c h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0px 0 15px 0;
+	padding: 0 0 0 35px;
+	height: 32px;
+	line-height: 32px;
+}
+
+/* @end */
+
+/* @group Horizontal Menu */
+
+#horiz-menu {
+	height: 37px;
+}
+
+#horiz-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 0px;
+}
+
+#horiz-menu li {
+	display: block;
+	float: left;
+	margin: 0;
+	margin-right: 10px;
+	padding: 0;
+}
+
+#horiz-menu li span {
+	display: block;
+	float: left;
+}
+
+#horiz-menu a {
+	display: block;
+	float: left;
+	height: 37px;
+	line-height: 30px;
+	padding: 0 15px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#horiz-menu li li a {
+	font-size: 12px;
+}
+
+#horiz-menu a:hover {
+	text-decoration: none;
+}
+
+#horiz-menu li:hover,
+#horiz-menu li.sfHover {
+	background: none;	
+}
+
+/* @end */
+
+/* @group Sub Menu */
+
+#sub-menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#sub-menu ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+#sub-menu ul li a {
+	padding: 0 15px;
+	font-size: 12px;
+}
+
+/* @end */
+
+/* @group Content Styles */
+
+/* @group Readon */
+#transparent .readon {
+	display: block;
+	clear: both;
+	float: right;
+	padding-left: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+div.section .readon {
+	display: block;
+
+	clear: both;
+	width: 99px;
+	height: 31px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* @end */
+
+/* @group Pathway */
+span.pathway {
+	float: left;
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	font-weight: normal;
+	margin-bottom: 15px;
+	padding-left: 5px;
+}
+
+span.pathway img {
+	float: left;
+	margin: 10px 10px;
+}
+
+span.pathway a {
+	float: left;
+}
+
+/* @end */
+
+/* @group Typography */
+
+ul.bullet-1a,
+ul.bullet-1b,
+ul.bullet-1c,
+ul.bullet-1d,
+ul.bullet-1e,
+ul.bullet-1f,
+ul.bullet-1g,
+ul.bullet-1h,
+ul.bullet-2a,
+ul.bullet-2b,
+ul.bullet-2c,
+ul.bullet-2d,
+ul.bullet-2e,
+ul.bullet-2f,
+ul.bullet-2g,
+ul.bullet-2h,
+ul.bullet-3a,
+ul.bullet-3b,
+ul.bullet-3c,
+ul.bullet-3d,
+ul.bullet-3e,
+ul.bullet-3f,
+ul.bullet-3g,
+ul.bullet-3h,
+ul.bullet-a,
+ul.bullet-b,
+ul.bullet-c,
+ul.bullet-d,
+ul.bullet-e,
+ul.number {
+	padding-left: 20px;
+	margin-left: 0;
+}
+
+ul.bullet-1a li,
+ul.bullet-1b li,
+ul.bullet-1c li,
+ul.bullet-1d li,
+ul.bullet-1e li,
+ul.bullet-1f li,
+ul.bullet-1g li,
+ul.bullet-1h li,
+ul.bullet-2a li,
+ul.bullet-2b li,
+ul.bullet-2c li,
+ul.bullet-2d li,
+ul.bullet-2e li,
+ul.bullet-2f li,
+ul.bullet-2g li,
+ul.bullet-2h li,
+ul.bullet-3a li,
+ul.bullet-3b li,
+ul.bullet-3c li,
+ul.bullet-3d li,
+ul.bullet-3e li,
+ul.bullet-3f li,
+ul.bullet-3g li,
+ul.bullet-3h li,
+ul.bullet-a li,
+ul.bullet-b li,
+ul.bullet-c li,
+ul.bullet-d li,
+ul.bullet-e li,
+ul.number li {
+	list-style: none;
+	margin-left: 0;
+	margin-bottom: 10px;
+	padding-left: 28px;
+}
+
+pre {
+	padding: 10px;
+	background: url(../images/trans-quote.png);
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 100%;
+	line-height: 150%;
+	width: auto;
+	padding: 10px;
+	margin: 15px 0;	
+	background: url(../images/trans-quote.png);
+}
+
+blockquote.b {
+	font-style: italic;
+	font-size: 100%;
+	line-height: 150%;
+	width: auto;
+	padding: 5px 10px 5px 40px;
+	margin: 15px 0;
+	background: #fff url(../images/quote-start.png) 0 0 no-repeat;
+	color: #333;
+}
+
+blockquote.b p {
+	background: #fff url(../images/quote-end.png) 100% 100% no-repeat;
+}
+
+/* @end */
+
+/* @group Notice Styles */
+
+span.alert,
+span.info,
+span.download,
+span.note {
+	display: block;
+	padding: 10px 10px 10px 45px;
+	margin: 15px 0;	
+}
+
+
+/* @end */
+
+.nounder {
+	text-decoration: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.clr {
+	clear:both;
+}
+
+div#rocket-logo {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+img#rocket {
+	background: url(../images/rocket.png) 0 0 no-repeat;
+	width: 144px;
+	height: 21px;
+	border: 0;
+}
+
+
+
+div#preload {
+	position: absolute;
+	top: -1000px;
+}
+
+/* Preload menu 'over' states */
+
+div#preload span {
+	display: block;
+	width: 100px;
+	height: 30px;
+}
+
+/* @end */

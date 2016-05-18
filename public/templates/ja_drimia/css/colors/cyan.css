@@ -1,0 +1,100 @@
+/*------------------------------------------------------------------------
+# JA Drimia 1.0 - Dec, 2007
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2007 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+-------------------------------------------------------------------------*/
+
+a {
+	color: #16A9CD;
+}
+
+a:hover, a:active, a:focus {
+	color: #16A9CD;
+}
+
+#ja-masscol {
+	background: url(../../images/cyan/mc-bg.gif) no-repeat #16A9CD;
+}
+
+.narrow #ja-masscol {
+	background: url(../../images/cyan/mc-bg-n.gif) no-repeat #16A9CD;
+}
+
+a.sublevel:hover,
+a.sublevel:active,
+a.sublevel:focus {
+	color: #16A9CD;
+}
+
+#active_menu {
+	color: #16A9CD;
+	font-weight: bold;
+}
+
+a.readon {
+	background: url(../../images/cyan/readon.png) no-repeat top;
+}
+
+a.readon:hover, a.readon:active, a.readon:focus {
+	background: url(../../images/cyan/readon.png) no-repeat bottom;
+}
+
+div.moduletable h3 {
+	color: #16A9CD;
+}
+
+div.moduletable h3 span {
+	background: url(../../images/cyan/h3-bg.gif) no-repeat center right;
+}
+
+.dropcap {
+	color: #16A9CD;
+}
+
+ol.smallnumber li.number-1 {
+	background: url(../../images/cyan/n-1.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-2 {
+	background: url(../../images/cyan/n-2.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-3 {
+	background: url(../../images/cyan/n-3.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-4 {
+	background: url(../../images/cyan/n-4.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-5 {
+	background: url(../../images/cyan/n-5.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-6 {
+	background: url(../../images/cyan/n-6.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-7 {
+	background: url(../../images/cyan/n-7.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-8 {
+	background: url(../../images/cyan/n-8.gif) no-repeat left top;
+}
+
+ol.smallnumber li.number-9 {
+	background: url(../../images/cyan/n-9.gif) no-repeat left top;
+}
+
+.bignumber {
+	background: url(../../images/cyan/ol-bg.gif) no-repeat top left;
+}
+
+/*splitmenu*/
+#ja-subnav li.active a {
+	background: #16A9CD;
+}

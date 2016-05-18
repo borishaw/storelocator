@@ -1,0 +1,163 @@
+<html><head /><body><pre>
+README.TXT
+
+Google Maps Component.
+
+Installation:
+
+1. Install via the Joomla component installer
+
+2. Configure the component 
+   (Components, Google_Maps, Configure)
+    
+   the key item here is the Google API Key which is configured from http://maps.google.com/apis/maps
+
+   The key needs to refer to the url root used by your mambo installation:
+     ie:   http://joomla.somesite.com or  (joomla configured as a subdomain)
+           http://www.somesite.com       (joomla installed as root)
+           http://www.somesite.com/joomla (joomla in a subdirectory)
+
+
+   The Title field will appear above the map, the Misc field will appear below it.
+
+3.  Sorry, but you need an update to your template that is being used to display this component.
+
+   (site, template manager, site templates, select template, edit HTML)
+
+
+   3A: Set The DOCTYPE and style info from the API documentation:
+
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot;&gt;
+
+   3B: Modify the &lt;body&gt; tag as follows *REMOVE CODE*:
+
+       I have added code that no longer requires editing of the body tag. So if you are upgrading from a previous version then you 
+       will need to <i>REMOVE</i> the code below. 
+
+&lt;body &lt;?php if ($option=='com_google_maps') { echo 'onload=&quot;initMap()&quot; onunload=&quot;GUnload()&quot;'; } ?&gt; &gt;
+
+4. Create a menu item
+
+   On your main menu, add a menu items (Link - URL type):
+
+   The Name should be the name of your category (ie Parks, Malls, etc) case is important here.
+
+   the Link: index.php?option=com_google_maps
+   
+   optional tags include [category=], [marker=], [center=], and [open=]
+   
+   Setting the category or marker by id will only show those points which are in that category or marker. 
+   So having &category=x will only display the markers in the "x" category.
+   It is now possible to display multiple categories by seperating each category by a comma. 
+   For example category=x,y,z will display the categories x,y,z (note those must be numbers). 
+   Also, the community builder category is set at -3. If you do a combination of category 
+   and marker level filtering then the markers will have to be in BOTH the category and 
+   the marker id range.
+   
+   Setting the center by id will set the center of the map to the point with the corresponding
+   id. This will override any center set in the configuration.
+   
+   Setting open to 0 or 1 (or true or false) will automatically open the info window for the 
+   center point. This is also overrides the configuration.
+   
+   a full example:
+   
+   index.php?option=com_google_maps&category=102,103&center=5&open=1
+   
+   This will create a map that only maps the points within the 102 and 103 
+   categories, and will center the map on the point with an id of "5" and 
+   the info window will open automatically.
+   
+   But remember the most basic map and the url you should use for testing is:
+   
+   index.php?option=com_google_maps
+
+
+5. If you like: Create a menu item (on the user_menu for logged in users
+
+   add a menu item (Link - URL type) off of the user menu (the function will not allow non-logged in users to submit
+
+   The Name can be set to what you like ("Submit Park")
+
+   The Link: index.php?option=com_google_maps&task=new
+
+6. Display of information in the popup window is formatted via an xsl file (minipage.xsl).
+
+   Feel free to format this as you would like (www.w3c.org for information on xslt transformations). 
+   You can edit this file directly from the component configuration. Remember to use well 
+   formed XML and XHTML. This is where you add links and driving directions to the info window. 
+   Go to the component configuration under the XSL tab to edit this file.
+   
+7. Polylines.
+
+   There is now rudementary support for Polylines. To create a polyline just create a normal marker and follow these steps.
+   
+   First: Select the Marker Type as "Polyline".
+   
+   Second: In the Miscellaneous field list the coordinates in order that you want the line to be made up of in
+	       ([lat],[lng]) format. If there are 3 or more points the polyline will follow the path of the points 
+	       in the order they are listed.
+           I.E. (40.714167,-74.006389), (34.053659,-118.47926) will draw a line from Los Angeles to New York.
+   
+   Third: In the Polyline field, put your desired color and pixel width of the line in the following format: 
+		  [color],[pixel width]. This is optional and the default values are as follows. I.E. #FF0000, 10 which
+		  gives you a red line with a pixel width of 10.
+		  
+8. XML File.
+
+    The newest component loads an external XML file with the data from the database. This should lower the number 
+    of hits to the database and possibly take some load off of the server. The XML file is updated each time you add 
+    a new marker or polyline to the database or if you edit either type of marker. If you want automatically update the 
+    XML file then set the auto-update number in the configuration to a positive number. The automatic update feature is 
+    a bit erratic so unless you have a CB site that maps online users I suggest not using it. To manually refresh
+    the XML file go to:
+    
+    index.php?option=com_google_maps&task=xml
+     
+9. Example websites. To see the latest version of this component go to
+   http://www.atlspecials.com/index.php?option=com_google_maps
+
+
+10. Sidebar Module
+
+   The sidebar module should be used with the lastest version of the component. If you have any problems with the module 
+   please post them to the message board at the Joomla developer site. (forge.joomla.org)
+
+11. Yahoo Local Search Module
+
+   The Yahoo Local Search module uses the Yahoo! Local Search API to plot points onto a Google Map. The search module only 
+   works in the United States. The search radius is about the size of the viewable map area.
+
+12. Backing up Data *NEW 2.5*
+
+    To backup your data you must save your XML file to your hard drive before unistalling the old component. When you reinstall 
+    the component you'll see a place to upload an XML file to restore your data in the "Advanced" tab of the configuration. 
+    Find the XML file and upload it to the server. The category data may not work correctly if you are uploading an XML 
+    file from one installation of Joomla to another. To get your XML file go to http://www.yoursite.com/components/com_google_maps/google_maps.xml.
+    
+13. Custom Icons
+    
+    Custom Icons for category. To use this feature simply put a number in the description field of the category that 
+    corresponds to the baseicon in the gicons.js file. By default you can use numbers 0-10. To add your own icons just edit 
+    the gicons file appropriately.
+    
+14. Component in content/wrapper/iframe
+    
+    The latest version of the component can now load in an iframe or wrapper so you can put a map on any page you like. The 
+    way to do this is to link to http://www.yoursite.com/index2.php?option=com_google_maps. You can use all the url parameters 
+    availible to the component in that url (category/marker filtering, etc) as well as two other url parameters. [mapWidth=] 
+    and [mapHeight=] will change the width and height of the map dynamically so you can have a different width and height from 
+    the main component page.
+    
+15. Common Problems
+    
+    Your MIME types aren't set correctly for .xsl files. Common symptoms of this are clicking markers and no info window showing.
+
+***** Important Note ********
+
+If you are using this component for commercial uses or as part of an intranet application you should look at the Google Terms of 
+Service. You may have to apply for a Google Maps Enterprise API key.
+   
+
+</pre></body></html>

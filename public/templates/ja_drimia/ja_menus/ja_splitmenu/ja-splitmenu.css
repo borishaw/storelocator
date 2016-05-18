@@ -1,0 +1,126 @@
+/*------------------------------------------------------------------------
+# JA Drimia 1.0 - Dec, 2007
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2006 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+-------------------------------------------------------------------------*/
+
+/* MAIN NAVIGATION
+----------------------------------------------------------- */
+#ja-splitmenu {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-splitmenu ul {
+	border-right: 1px solid #666666;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#ja-splitmenu li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#ja-splitmenu a {
+	border-left: 1px solid #666666;
+	border-right: 1px solid #333333;
+	color: #CCCCCC;
+	display: block;
+	float: left;
+	font-size: 115%;
+	font-weight: bold;
+	line-height: 44px;
+	margin: 0;
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus {
+	background: #666666;
+	color: #FFFFFF;
+}
+
+#ja-splitmenu li.active a,
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus {
+	background: #333333;
+	color: #FFFFFF;
+}
+
+/*1st item */
+#ja-splitmenu li a.first-item,
+#ja-splitmenu li a.first-item:hover,
+#ja-splitmenu li a.first-item:active,
+#ja-splitmenu li a.first-item:focus {
+	border-left: none;
+}
+
+#ja-splitmenu li.active a.first-item,
+#ja-splitmenu li.active a.first-item:hover,
+#ja-splitmenu li.active a.first-item:active,
+#ja-splitmenu li.active a.first-item:focus {
+	background: #333333;
+	border-left: none;
+	color: #FFFFFF;
+}
+
+/* SUB NAVIGATION
+--------------------------------------------------------- */
+#ja-subnav {
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	margin: 0 10px 10px;
+	padding: 10px;
+}
+
+#ja-subnav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-subnav li {
+	background: none !important;
+	display: block;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#ja-subnav a {
+	border-bottom: 1px solid #DDDDDD;
+	color: #666666;
+	display: block;
+	padding: 5px 0;
+	text-decoration: none;
+	text-indent: 5px;
+	width: 99%;
+}
+
+#ja-subnav a:hover,
+#ja-subnav a:active,
+#ja-subnav a:focus {
+	background: url(../../images/grad1.jpg) repeat-x center;
+	color: #666666;
+	text-decoration: none;
+}
+
+#ja-subnav li.active a {
+	background: #FF760E;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#ja-subnav li.active a:hover,
+#ja-subnav li.active a:active,
+#ja-subnav li.active a:focus {
+	color: #FFFFFF;
+}
+

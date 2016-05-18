@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4644ed8e-0a92-4472-ae49-19db27e0a1df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error_file" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/map-icon.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/locator.js" afterPath="$PROJECT_DIR$/public/js/locator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/store-locator.min.js" afterPath="$PROJECT_DIR$/public/js/store-locator.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/getStores.php" afterPath="$PROJECT_DIR$/php/getStores.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/insertStores.php" afterPath="$PROJECT_DIR$/php/insertStores.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/locator.html" afterPath="$PROJECT_DIR$/public/locator.html" />
     </list>
     <ignored path="storelocator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,14 +35,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="editStore.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms/editStore.php">
+      <file leaf-file-name="getStores.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/getStores.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="209">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding>
-                <marker date="1463000990000" expanded="true" signature="87:129" placeholder="SELECT * FRO... store_info" />
+                <marker date="1463609269000" expanded="true" signature="136:160" placeholder="SELECT * FRO... store_info" />
+                <marker date="1463609269000" expanded="true" signature="136:181" placeholder="SELECT * FRO... store_info" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="locator.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/locator.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,7 +103,6 @@
         <option value="$PROJECT_DIR$/panel/panel.html" />
         <option value="$PROJECT_DIR$/panel/panel2.js" />
         <option value="$PROJECT_DIR$/php/db.php" />
-        <option value="$PROJECT_DIR$/public/locator.html" />
         <option value="$PROJECT_DIR$/php/updateCoor.php" />
         <option value="$PROJECT_DIR$/php/CsvImporter.php" />
         <option value="$PROJECT_DIR$/csv/stores.csv" />
@@ -95,13 +113,14 @@
         <option value="$PROJECT_DIR$/cms/db-auth.inc.php" />
         <option value="$PROJECT_DIR$/cms/deleteStore.php" />
         <option value="$PROJECT_DIR$/cms/index.php" />
-        <option value="$PROJECT_DIR$/public/locator.js" />
-        <option value="$PROJECT_DIR$/php/insertStores.php" />
-        <option value="$PROJECT_DIR$/php/getStores.php" />
         <option value="$PROJECT_DIR$/error_file" />
         <option value="&lt;6a1771d4-e697-4639-9497-66dd31306db2&gt;/demo/hd_store_locator/php/getStores.php" />
         <option value="&lt;6a1771d4-e697-4639-9497-66dd31306db2&gt;/demo/hd_store_locator/public/locator.js" />
         <option value="&lt;6a1771d4-e697-4639-9497-66dd31306db2&gt;/demo/hd_store_locator/cms/db-auth.inc.php" />
+        <option value="$PROJECT_DIR$/public/locator.js" />
+        <option value="$PROJECT_DIR$/php/insertStores.php" />
+        <option value="$PROJECT_DIR$/php/getStores.php" />
+        <option value="$PROJECT_DIR$/public/locator.html" />
       </list>
     </option>
   </component>
@@ -183,21 +202,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storelocator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="storelocator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cms" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -226,17 +231,17 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/csv" />
-      <recent name="$PROJECT_DIR$/panel" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/php" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/csv" />
+      <recent name="$PROJECT_DIR$/panel" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.insertStores.php">
@@ -320,19 +325,19 @@
       <workItem from="1462984715219" duration="24000" />
       <workItem from="1462984772289" duration="7695000" />
       <workItem from="1463154405645" duration="654000" />
-      <workItem from="1463414918772" duration="5693000" />
+      <workItem from="1463414918772" duration="9575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44711000" />
+    <option name="totallyTimeSpent" value="48593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28594506" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25121164" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5048465" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -370,28 +375,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js-store-locator-gh-pages/dist/store-locator.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js-store-locator-gh-pages/examples/medicare.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/map.html" />
-    <entry file="file://$PROJECT_DIR$/js-store-locator-gh-pages/examples/medicare-static-ds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-store-locator-gh-pages/css/storelocator.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -530,13 +513,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/storelocator.css" />
-    <entry file="file://$PROJECT_DIR$/public/locator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-store-locator-gh-pages/examples/custom.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-285">
@@ -580,14 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/locator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csv/stores.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2736">
@@ -596,36 +564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/insertStores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/error_file">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/getStores.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <marker date="1463490963000" expanded="true" signature="136:181" placeholder="SELECT * FRO... store_info" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cms/db-auth.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -656,6 +598,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cms/db-auth.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cms/editStore.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
@@ -663,6 +613,70 @@
           <folding>
             <marker date="1463000990000" expanded="true" signature="87:129" placeholder="SELECT * FRO... store_info" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/store-locator.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="191" selection-start-line="22" selection-start-column="186" selection-end-line="22" selection-end-column="191" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/locator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/insertStores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/fonts/fontello.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/getStores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <marker date="1463609269000" expanded="true" signature="136:160" placeholder="SELECT * FRO... store_info" />
+            <marker date="1463609269000" expanded="true" signature="136:181" placeholder="SELECT * FRO... store_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/UP/MENU.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/locator.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

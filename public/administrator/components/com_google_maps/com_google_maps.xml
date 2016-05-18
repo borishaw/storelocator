@@ -1,0 +1,163 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+<name>Google_Maps</name>
+<creationDate>August 2006</creationDate>
+<author>David Pollack</author>
+<copyright>This component in released under the GNU/GPL License</copyright>
+<authorEmail>dhpollack@gmail.com</authorEmail>
+<authorUrl>www.atlspecials.com/index.php?option=com_google_maps&amp;Itemid=36</authorUrl>
+<version>2.6</version>
+<install>
+<queries>
+<query>
+DROP TABLE IF EXISTS `#__google_maps`;
+</query>
+<query>
+DROP TABLE IF EXISTS `#__google_maps_backup`;
+</query>
+<query>
+CREATE TABLE `#__google_maps` (
+`id` INT NOT NULL AUTO_INCREMENT,
+`name` VARCHAR(100) NOT NULL default '',
+`address` TEXT,
+`suburb` VARCHAR(50) NOT NULL default '',
+`state` VARCHAR(20) NOT NULL default '',
+`country` VARCHAR(50) NOT NULL default '',
+`postcode` VARCHAR(10) NOT NULL default '',
+`misc` TEXT,
+`lat` DOUBLE,
+`lng` DOUBLE,
+`polyColor` VARCHAR(10) NOT NULL default '',
+`polyWidth` VARCHAR(10) NOT NULL default '',
+`draggable` TINYINT(1) NOT NULL default '0',
+`markerType` TINYINT(1) NOT NULL default '1',
+`params` TEXT,
+`published` TINYINT(1) NOT NULL default '0',
+`checked_out` INT NOT NULL,
+`checked_out_time` INT NOT NULL,
+`ordering` INT NOT NULL,
+`catid` INT NOT NULL, 
+`user_id` INT NOT NULL,
+`access` TINYINT(3) NOT NULL,
+`date` DATETIME NOT NULL,
+PRIMARY KEY (`id`)
+)
+</query>
+<query>
+DROP TABLE IF EXISTS `#__google_maps_conf`
+</query>
+<query>
+DROP TABLE IF EXISTS `#__google_maps_conf_backup`;
+</query>
+<query>
+CREATE TABLE `#__google_maps_conf` (
+`id` TINYINT(4) NOT NULL default '1',
+`mapWidth` VARCHAR(10) NOT NULL default '99%',
+`mapHeight` VARCHAR(10) NOT NULL default '450px',
+`mapBorder` TEXT,
+`zoomLevel` TINYINT(1) NOT NULL default '4',
+`APIKey` VARCHAR(100) NOT NULL default '[Enter your API Key here]',
+`title` TEXT,
+`misc` TEXT,
+`centerId` INT default '0',
+`centerLat` DOUBLE default '40.748442',
+`centerLng` DOUBLE default '-73.984721',
+`autoOpen` TINYINT(1) NOT NULL default '0',
+`showScale` TINYINT(1) NOT NULL default '1',
+`showZoom` TINYINT(1) NOT NULL default '1',
+`whichZoom` TINYINT(1) NOT NULL default '1',
+`showType` TINYINT(1) NOT NULL default '1',
+`whichType` TINYINT(1) NOT NULL default '1',
+`contZoom` TINYINT(1) NOT NULL default '0',
+`doubleclickZoom` TINYINT(1) NOT NULL default '0',
+`reqAd` TINYINT(1) NOT NULL default '0',
+`reqCt` TINYINT(1) NOT NULL default '0',
+`reqSt` TINYINT(1) NOT NULL default '0',
+`reqZp` TINYINT(1) NOT NULL default '0',
+`reqCn` TINYINT(1) NOT NULL default '0',
+`reqLl` TINYINT(1) NOT NULL default '0',
+`tooltip` INT NOT NULL default '0',
+`pdMarkers` TEXT,
+`geocode` TINYINT(1) NOT NULL default '1',
+`sideTitle` TEXT,
+`sideStyle` TEXT,
+`sideNum` INT NOT NULL default '5',
+`sideShowcat` TINYINT(1) NOT NULL default '1',
+`sideShowtitle` TINYINT(1) NOT NULL default '1',
+`autoApprove` TINYINT(1) NOT NULL default '0',
+`communityEnable` TINYINT(1) NOT NULL default '0',
+`communityHidereal` TINYINT(1) NOT NULL default '0',
+`communityLimit` INT NOT NULL default '125',
+`communityIcon` INT NOT NULL default '0',
+`catSep` VARCHAR(1) NOT NULL default ',',
+`xmlEncoding` VARCHAR(20) NOT NULL default 'ISO-8859-1',
+`xmlUrl` TINYINT(1) NOT NULL default '0',
+`xmlCache` INT NOT NULL default '-1',
+`editBodytag` INT NOT NULL default '0',
+`safariCompat` TINYINT(1) NOT NULL default '0',
+`overviewWidth` INT NOT NULL default '200',
+`overviewHeight` INT NOT NULL default '200',
+`overviewEnable` TINYINT(1) NOT NULL default '0',
+`mappingAPI` TINYINT(1) NOT NULL default '0',
+PRIMARY KEY(`id`)
+)
+
+</query>
+<query>
+INSERT INTO `#__google_maps_conf` (mapBorder,title, sideTitle) values ('1px solid lightblue', "Map:",'Locations');
+</query>
+</queries>
+</install>
+<uninstall>
+<queries>
+<query>
+DROP TABLE `#__google_maps`
+</query>
+<query>
+DROP TABLE `#__google_maps_conf`
+</query>
+</queries>
+</uninstall>
+<files>
+<filename>google_maps.php</filename>
+<filename>google_maps.html.php</filename>
+<filename>google_maps.xml.php</filename>
+<filename>google_maps.xml</filename>
+<filename>gicons.js</filename>
+<filename>tooltip.css</filename>
+<filename>minipage.xsl</filename>
+<filename>ajaxslt/misc.js</filename>
+<filename>ajaxslt/dom.js</filename>
+<filename>ajaxslt/xpath.js</filename>
+<filename>ajaxslt/xslt.js</filename>
+<filename>ajaxslt/xpathdebug.js</filename>
+<filename>google_maps.js</filename>
+<filename>yahoo_maps.js</filename>
+<filename>microsoft_maps.js</filename>
+</files>
+
+<administration>
+<menu>Google Maps</menu>
+<submenu>
+	<menu>Manage Google Map Markers</menu>
+	<menu link="option=com_categories&amp;section=com_google_maps">Manage Google Map Categories</menu>    		
+	<menu task="conf" act="configure">Configuration</menu>
+</submenu>
+
+<files>
+	<filename>admin.google_maps.php</filename>
+	<filename>admin.google_maps.html.php</filename>
+	<filename>toolbar.google_maps.php</filename>
+    <filename>toolbar.google_maps.html.php</filename>
+    <filename>google_maps.class.php</filename>
+	<filename>help/README.html</filename>
+</files>
+</administration>
+
+<installfile>
+  <filename>install.google_maps.php</filename>
+</installfile>
+<uninstallfile>
+  <filename>uninstall.google_maps.php</filename>
+</uninstallfile>
+</mosinstall>

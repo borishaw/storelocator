@@ -1,0 +1,2 @@
+Date	Time	Cause	IP	Name	User agent	Request method	Request URI	Comment
+2008-07-03	18:09:40	Flooding	99.230.108.26	CPE0050ba56f72c-CM0014049355f0.cpe.net.cable.rogers.com	Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648)	GET	/index.php/About-Us.html	10 requests in less than 10 seconds (max = 10)

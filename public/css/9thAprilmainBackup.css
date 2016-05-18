@@ -1,0 +1,1375 @@
+body {
+	position: relative;
+}
+
+body.contact .wrapper, body.about .wrapper {
+	margin-bottom: 50px;
+}
+
+body.contact .wrapper p, body.about .wrapper p{
+	margin-bottom: 0;
+}
+
+html.homepage {
+  height: 100%;
+}
+
+.spacer{
+	
+	position:relative;
+	width:99%;
+	height:100px;
+	
+}
+
+body.homepage {
+  background: #fff;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper.scroll-w {
+	height: 100% !important;
+	height: 100%;
+	margin: 0 auto; 
+	overflow: hidden;
+}
+
+.main section .page_container {
+  position: relative;
+  top: 10%;
+  margin: 0 auto 0;
+  max-width: 950px;
+  z-index: 3;
+}
+.main section  {
+  overflow: hidden;
+}
+
+.main section > img {
+  position: absolute;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.aboutHeader{
+	
+  /*-webkit-transition: all 2.0s cubic-bezier(0.63,  0.64,  0.3,  1)!important;
+  -moz-transition: all 2.0s cubic-bezier(0.63,  0.64,  0.3,  1)!important;
+  -o-transition: all 2.0s cubic-bezier(0.63,  0.64,  0.3,  1)!important;
+  transition: all 2.0s cubic-bezier(0.63,  0.64,  0.3,  1)!important;*/
+  webkit-transition: all 2.0s!important;
+  -moz-transition: all 2.0s!important;
+  -o-transition: all 2.0s!important;
+  transition: all 2.0s!important;
+	
+}
+
+header {
+  position: relative;
+  z-index: 48;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -moz-transition: all 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -o-transition: all 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  transition: all 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.homepage header {
+  position: absolute;
+  top: 0;
+  z-index: 52;
+  left: 0;
+}
+header.fixed, 
+body.fp-viewing-slide4 header {
+  background-color: #d5373b;
+  position: fixed;
+  top: 0;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+#products {
+  padding-top: 140px;
+}
+
+.logo {
+  display: block;
+  width: 100px;
+  height: 51px;
+  text-indent:-9000px;
+  float: left;
+  margin-top: 20px;
+  margin-left:40px;
+  position: relative;
+  z-index: 60;
+  background: url('../img/logo.png') no-repeat center;
+  background-size: 100%;
+}
+
+.logo-w2 {
+	background-image:url('../img/logo-w2.png');
+}
+
+.fancybox-skin {
+	padding: 50px 15px 15px !important;
+}
+.fancybox-close {
+	top: 16px !important;
+}
+
+.menu {
+  display: block;
+  float: right;
+  margin-top: 30px;
+  margin-right: 40px;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: 'Zona Pro ExtraBold';
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 30px;
+  background: url('../img/menu.svg') no-repeat right top;
+}
+.menu-w {
+   color: #fff;
+  line-height: 26px;
+  background-image: url('../img/menu-w.png');
+  background-size: 24px;
+}
+body.fp-viewing-slide4 header .logo, header.fixed .logo {
+  background-image:url('../img/logo-w.png');
+}
+body.fp-viewing-slide1 header .menu, body.fp-viewing-slide3 header .menu, body.fp-viewing-slide4 header .menu, header.fixed .menu {
+  color: #fff;
+  line-height: 26px;
+  background-image: url('../img/menu-w.png');
+  background-size: 24px;
+}
+body.fp-viewing-slide1 #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, body.fp-viewing-slide3 #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {
+	background: none repeat scroll 0% 0% #fff
+}	
+body.fp-viewing-slide1 #fp-nav ul li a span, .fp-slidesNav ul li a span, body.fp-viewing-slide3 #fp-nav ul li a span, .fp-slidesNav ul li a span {
+	border: 1px solid #fff;
+}
+.main .page_container {
+  text-align: left;
+  color: #222;
+}
+.main .page_container h1 {
+  font-family: 'Zona Pro Thin';
+  font-size: 71px;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.main .page_container h1 span {
+  font-family: 'Zona Pro Bold';
+  line-height: 1.4;
+}
+.main .page_container p {
+  font-family: 'Zona Pro Thin';
+  font-size: 20px;  
+  line-height: 1;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  background: #d5363b;
+  font-family: 'Zona Pro Bold';
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 32px;
+}
+
+.back {
+  display: block;
+  font-family: 'Zona Pro Bold';
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+  padding-top: 10px;
+  overflow: hidden;
+  background: url('../img/close.png') no-repeat center top;
+}
+
+.fancybox-close {
+  top: 33px;
+  width: 50px;
+  right: 48%;
+  margin-right: -25px;
+  background: url('../img/close-2.png') no-repeat center top;
+}
+
+.main {
+    -webkit-transition: top 0.8s cubic-bezier(0.7,  0.01,  0.3,  1);
+    -moz-transition: top 0.8s cubic-bezier(0.7,  0.01,  0.3,  1);
+    -o-transition: top 0.8s cubic-bezier(0.7,  0.01,  0.3,  1);
+    transition: top 0.8s cubic-bezier(0.7,  0.01,  0.3,  1);
+}
+
+.onepage-wrapper .section {
+  height: 0;
+}
+
+.main section {
+  background-size: cover !important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  display: block;
+  /*height: 100%;*/
+  -webkit-transition: height 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -moz-transition: height 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -o-transition: height 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  transition: height 0.8s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.main section.active {
+  height: 100%;
+  -webkit-transition: height 0.4s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -moz-transition: height 0.4s cubic-bezier(0.63,  0.64,  0.3,  1);
+  -o-transition: height 0.4s cubic-bezier(0.63,  0.64,  0.3,  1);
+  transition: height 0.4s cubic-bezier(0.63,  0.64,  0.3,  1);
+}
+
+.main .page1 {
+  background: url('../img/hp/slide-1.jpg');
+  background-repeat: no-repeat;
+  z-index: 50;
+}
+.main .page2 {
+  background: url('../img/hp/slide-2.jpg');
+  background-repeat: no-repeat;
+  z-index: 40;
+}
+.main .page3 {
+  background: url('../img/hp/slide-3.jpg');
+  background-repeat: no-repeat;
+  z-index: 30;
+}
+.main .page4 {
+  background: url('../img/hp/slide-4.jpg');
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+.main .page5 {
+  background: url('../img/hp/slide-5.jpg');
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.main .page1 .page_container {
+  float: right;
+  margin-right: 20%;
+  color: #fff;
+}
+
+.main .page2 .page_container {
+  float: right;
+  margin-right: 8%;
+  color: #000;
+}
+
+.main .page3 .page_container {
+  /*color: #fff;*/
+  z-index: 20;
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  top: auto;
+  color: #fff;
+}
+
+.main .page4 .page_container {
+  position: absolute;
+  left: 15%;
+  top: 35%;
+  z-index: 20;
+}
+
+.main .page5 .page_container {
+  position: absolute;
+  right: 20%;
+  z-index: 20;
+}
+
+.overlay-hugeinc strong {
+  font-family: 'Zona Pro Bold';
+  font-size: 90px;
+  color: white;
+  border-bottom:1px solid #fff;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.overlay-hugeinc li a {
+  font-family: 'Zona Pro Thin';
+  font-size: 60px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  line-height: normal!important;
+}
+
+.logo-w {
+  display: block;
+  width: 100px;
+  float: left;
+  margin-top: 40px;
+  margin-left:40px;
+  position: relative;
+  z-index: 50;
+}
+
+.logo-w img {
+  width: 100%;
+}
+
+.social-media {
+  padding-left: 0;
+  text-align: center;
+}
+
+.social-media li a span {
+  display: inline-block;
+  vertical-align: top;
+  width: 21px;
+  min-height: inherit;
+  height: 21px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.social-media li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.social-media li a span {
+  background-image: url('../img/sm.png');
+  background-repeat: no-repeat;
+  text-indent: -9000px;
+  margin: 0;
+}
+
+.social-media li.facebook a span {
+  background-position: left center
+}
+.social-media li.twitter a {
+  background-position: -38px center
+}
+.social-media li.instagram a {
+  background-position: -86px center
+}
+.social-media li.google-plus a {
+  background-position: right center
+}
+/*Content Styling*/
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Zona Pro Bold';
+  font-size: 71px;
+  color: #222;
+  line-height: 1;
+  margin: 20px auto;
+}
+.content p {
+  font-family: 'Zona Pro Light';
+  font-size: 16px;
+  color: #222;
+  margin: 10px auto 20px;
+  line-height: 1.6
+}
+
+.content div {
+  font-family: 'Zona Pro Light';
+  font-size: 16px;
+  color: #222;
+  margin: 10px auto 20px;
+  line-height: 1.6;
+}
+
+.content p.wcont {
+	width: 800px;
+}
+
+.content div.wcont {
+	width: 800px;
+	overflow: hidden;
+}
+
+  
+.content img.center {
+  margin: 30px auto;
+  display: block;
+}
+
+.cta_cont {
+  display: block;
+  padding-top: 20px;
+  width: 100%;
+  height: 490px;
+  background: url('../img/hp/about2.jpg') no-repeat center bottom;
+  background-size: 100%;
+}
+
+.cta_cont a {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+/*PRODUCTS */
+.products-sel-cont {
+  display: table;
+  margin: 40px auto;
+  width: 900px;
+}
+.products-sel {
+  display: table-row;
+  width: 100%;
+  padding-left: 0;
+  text-align: center;
+}
+.products-sel li {
+  display: table-cell;
+}
+.products-sel li a {
+  display: block;
+  font-family: 'Zona Pro Thin';
+  font-size: 20px;
+  color: #222;
+  padding: 0 10px;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.products-sel li a.button {
+  font-family: 'Zona Pro Bold';
+  color: #fff;
+  font-size: 19px;
+}
+
+.products-cont {
+  text-align: center;
+  display: block;
+  width: 840px;
+  margin: 0 auto;
+}
+.products-cont ul {
+  padding-left: 0;
+  list-style: none;
+  height: auto !important;
+}
+.products-cont li {
+  list-style: none;
+  max-height: 320px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  -webkit-transition: -webkit-transform,margin,opacity,width 400ms;
+  -moz-transition: -webkit-transform,margin,opacity,width 400ms;
+  -o-transition:/ -webkit-transform,margin,opacity,width 400ms;
+  transition: -webkit-transform,margin,opacity,width 400ms;  
+}
+.products-cont li a {
+  display: block;
+  text-align: center;
+  margin: 0 32px;
+}
+.products-cont li.last, .products-cont li.block {
+	display: block !important;
+}
+.products-cont li.mix {
+  display: none;
+}
+.products-cont li a::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 27px;
+  margin: 30px auto 0;
+  background: url('../img/plus.png') no-repeat center;
+}
+.products-cont li.hide a::after {
+  display: none;
+}
+.product .back {
+  position: relative;
+}
+.product-desc-cont {
+  display: block;
+  float: right;
+  position: relative;
+  margin-top: 10%;
+  background-color: #fff;
+  color: #222;
+  width: 520px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+.product-desc-cont.large {
+	width: 630px;
+}
+.product-desc {
+  margin-top: 30px;
+  display: block;
+  padding-left: 30px;
+}
+.product-desc h1 {
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+.product-desc h2 {
+  font-size: 15px;
+}
+.product-desc p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.product-desc a.facts {
+  display: inline-block;
+  margin-top: 30px;
+  font-family: 'Zona Pro Bold';
+  font-size: 12px;
+  border: 1px solid #222;
+  line-height: 20px;
+  padding: 0 10px;
+  color: #222;
+  text-decoration: none;
+}
+.product-desc img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+.product-content {
+	display: inline-block;
+  	vertical-align: middle;
+  	width: 300px;
+}
+body.peach-s {
+  background: url('../img/images/peach-smoothie2-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.strawberry-s {
+  background: url('../img/images/strawberry-smoothie-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.blueberry-s {
+  background: url('../img/images/blueberry-smoothie-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.mango-s {
+  background: url('../img/images/mango-smoothie-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.passionfruit-s {
+  background: url('../img/images/passionfruit-smoothie-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.naturalyogurt-s {
+  background: url('../img/images/naturalyogurtb2-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.naturalyogurt3-s {
+  background: url('../img/images/naturalyogurt32-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.ricepudding-s {
+  background: url('../img/images/ricepudding-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.sweetlassi-s {
+  background: url('../img/images/saltylassi-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.saltylassi-s {
+  background: url('../img/images/sweetlassi-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.milk-s {
+  background: url('../img/images/milkb-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.milk3-s {
+  background: url('../img/images/milk32-f.jpg') no-repeat center;
+  background-size: cover;
+}
+body.butter-s {
+  background: url('../img/images/butterb-f.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.contact-form {
+  display: block;
+  width: 800px;
+  margin: 20px auto 0;
+}
+.contact-form form {
+  width: 100%;
+}
+.contact-form .left, .textarea {
+  display: inline-block;
+  vertical-align: top;
+}
+.contact-form .left {
+  width: 37%;
+  margin-right: 2%;
+}
+.contact-form .left input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ddd;
+  line-height: 30px;
+  margin-bottom: 30px;
+  padding-left: 5px;
+  font-family: 'Zona Pro Thin';
+  font-size: 12px;
+  color: #222;
+}
+
+.textarea {
+  border: 1px solid #ddd;
+  font-family: 'Zona Pro Thin';
+  font-size: 12px;
+  width: 60%;
+  padding-left: 5px;
+  height: 90px;
+}
+
+::-webkit-input-placeholder {
+   font-family: 'Zona Pro Thin';
+  font-size: 14px;
+  color: #222;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Zona Pro Thin';
+  font-size: 14px;
+  color: #222;
+
+
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'Zona Pro Thin';
+  font-size: 14px;
+  color: #222;  
+}
+
+:-ms-input-placeholder {  
+   font-family: 'Zona Pro Thin';
+  font-size: 14px;
+  color: #222;  
+}
+
+.submit {
+  display: block;
+  background-color: #d5363b;
+  font-family: 'Zona Pro Bold';
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 32px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.contact-info {
+  padding-left: 0;
+  width: 800px;
+  display: block;
+  margin: 60px auto 0;
+}
+.contact-info li {
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Zona Pro Thin';
+  font-size: 14px;
+  text-align: center;
+  color: #222;
+  width: 32.5%;
+  line-height: 1.6;
+}
+.contact-info li:before {
+  content: '';
+  display: block;
+  margin: 0 auto 20px;
+  width: 29px;
+  height: 30px;
+  background: url('../img/icons-contact.png') no-repeat left top;
+}
+.contact-info li a {
+  color: #222;
+  text-decoration: none;
+}
+.contact-info li.loc:before {
+  background-position: 8px top;
+}
+.contact-info li.mail:before {
+  background-position: -46px top;
+}
+.contact-info li.tel:before {
+  background-position: -17px top;
+}
+
+footer {
+	padding: 10px 0;
+	background: #eee;
+	font-family: 'Zona Pro', serif;
+  color: #999;
+  font-size: 12px;
+	line-height: 1.6;
+	text-align: center;
+}
+footer.bottom {
+	position: absolute;
+	width: 100%;
+	margin-bottom: -50px;
+	bottom: 0;
+}
+.homepage footer.bottom {
+	display: none;
+	margin-bottom: 0;
+}
+.homepage.fp-viewing-slide4 footer.bottom {
+	display: block;
+}
+.homepage.fp-viewing-slide4 .products-cont ul { margin-bottom: 50px; }
+footer a {
+	color: #999;
+}
+.overlay.overlay-hugeinc {
+  z-index: 1000;
+}
+.about h3 {
+  font-family: 'Zona Pro Thin';
+}
+.about h3 span {
+  font-family: 'Zona Pro Bold';
+}
+.c-facebook {
+  font-size: 18px;
+  color: #222;
+  text-decoration: none;
+}
+.c-facebook span {
+  background-position: left center;
+  background-image: url('../img/sm.png');
+  background-repeat: no-repeat;
+  text-indent: -9000px;
+  display: inline-block;
+  vertical-align: top;
+  width: 21px;
+  min-height: inherit;
+  height: 21px;
+  margin: 0;
+}
+
+
+.logo_mainpage {
+  display: block;
+  width: 100px;
+  height: 51px;
+  text-indent: -9000px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+  position: relative;
+  z-index: 60;
+  background: url('../img/logo.png') no-repeat center;
+  background-size: 100%;
+}
+
+
+
+@media all and (min-width: 1024px) {
+	
+
+	
+  .logo_mainpage {
+      width: 252px;
+      height: 146px;
+  }
+  
+  .logo {
+  width: 120px;
+  height: 60px;
+}
+  
+  .header-logo{
+  
+     display:none;
+  
+  }
+  
+  .logo-w {
+    width: 120px;
+  }
+  
+  .logo_down{
+  
+     width:100%;
+     overflow:hidden;
+     
+  
+  }	 
+  
+.left_section_33{
+	
+  height: 204px;
+  width: 33%;
+  float: left;
+  overflow: hidden;
+  min-width: 244px;
+	
+}
+
+.right_section_66{
+	
+  width: 66%;
+  float: right;
+  overflow: hidden;
+  min-width: 244px;
+  text-align:left;
+	
+}
+
+.right_section_33{
+	
+  height: 204px;
+  width: 33%;
+  float: right;
+  overflow: hidden;
+  min-width: 244px;
+  
+}
+.left_section_66{
+	
+  width: 66%;
+  float: left;
+  overflow: hidden;
+  min-width: 244px;
+  text-align:right;
+	
+}
+
+.product-image-foodland-milk{
+	
+  background: url("../img/logos.png") no-repeat;
+  height: 188px;
+  width: 135px;
+  float: right;
+  overflow: hidden;
+  background-position: -165px 50px;
+
+}
+
+.product-image-canadian-milk{
+	  
+  background: url("../img/logos.png") no-repeat;
+  height: 188px;
+  width: 135px;
+  float: left;
+  overflow: hidden;
+  background-position: 0px 51px;
+	
+}	
+  
+}
+@media all and (max-width: 1024px) {
+
+.product-image-foodland-milk{
+	
+  background: url("../img/logos.png") no-repeat;
+  height: 188px;
+  width: 135px;
+  margin:0 auto;
+  overflow: hidden;
+  background-position: -165px 50px;
+	
+}	
+	
+.product-image-canadian-milk{
+	  
+  background: url("../img/logos.png") no-repeat;
+  height: 188px;
+  width: 135px;
+  overflow: hidden;
+  background-position: 0px 51px;
+  margin:0 auto;
+	
+}
+	
+.left_section_33{
+	
+  height: 204px;
+  width: 100%;
+  overflow: hidden;
+  min-width: 244px;
+	
+}
+.right_section_66{
+	
+  width: 100%;
+  overflow: hidden;
+  min-width: 244px;
+	
+}
+
+.right_section_33{
+	
+  height: 204px;
+  width: 100%;
+  overflow: hidden;
+  min-width: 244px;
+	
+}
+.left_section_66{
+	
+  width: 100%;
+  overflow: hidden;
+  min-width: 244px;
+	
+}
+
+  	
+	
+  .header-logo{
+  
+     display:block;
+  
+  }
+  
+  .product-image-foodland-milk{
+  
+  margin:0 auto;
+  
+  }
+  
+  .logo_down{
+  
+     width:100%;
+     overflow:hidden;
+     display:none;
+  
+  }	 
+	
+  .main section {
+  	background-size: auto !important;
+  }
+  .main .page1 {
+    background-image: url('../img/hp/slide-1-t.jpg');
+    background-position: center;
+  }
+  .main .page2 {
+    background-image: url('../img/hp/slide-2-t.jpg');
+    background-position: right;
+  }
+  .main .page3 {
+    background-image: url('../img/hp/slide-3-t.jpg');
+    background-position: center;
+  }
+  .main .page4 {
+    background-image: url('../img/hp/slide-4-t.jpg');
+  }
+  .main .page5 {
+    background-image: url('../img/hp/slide-5-t.jpg');
+  }
+  .main .page1 .page_container {
+    bottom:20%;
+    color: #fff;
+  }
+  .main .page2 .page_container {
+    top: 20%;
+    color: #000;
+  }
+  .main .page3 .page_container {
+    top: 65%;
+    color: #fff;
+  }
+  .main .page3 .page_container h1 span {
+      line-height: 1;
+  }
+  .main .page4 .page_container {
+    top: 18%;
+    left: 10%;
+  }
+  .main .page5 .page_container {
+    right: 5%;
+  }
+  .about .cta_cont {
+    height: 300px;
+    background-position: center -70px;
+  }
+  button {
+  	-webkit-appearance: none;
+	}
+
+  .main .page1 .page_container {
+    top: 20%;
+    bottom: inherit;
+    left: 5%;
+    float: none;
+  }
+  .main .page2 .page_container {
+    top: 20%;
+    left: 5%;
+    float: none;
+  }
+  .main .page3 {
+    background-position: center;
+  }
+  .main .page3 .page_container {
+    top: 20%;
+    left: 5%;
+    bottom: inherit;
+  }
+  .main .page3 .page_container h1 span {
+    line-height: 1;
+  }
+  .main .page4 .page_container {
+    top: 18%;
+    left: 5%;
+  }
+  .main .page5 .page_container {
+    float: none;
+    left: 45%;
+    top: 23%;
+    right: inherit;
+  }
+  div#products {
+    width: 100%;
+  }
+  .products-sel-cont {
+    width: 96%;
+  }
+  .products-cont {
+    width: 100%;
+  }
+  .about .cta_cont {
+    height: 307px;
+  }
+  .content p.wcont {
+    width: 90%;
+  }
+  .content div.wcont {
+    width: 90%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form form {
+    width: 96%;
+  }
+  .product-desc {
+    overflow: inherit;
+  }
+  .product-desc a.facts {
+    border-width: 2px;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .logo-w {
+  	position: absolute;
+  }
+  .overlay-close {
+  	padding: 0 !important;
+  	-webkit-apperance: none;
+  }
+}
+
+@media all and (max-width: 768px) and (min-width: 660px) {
+
+	.overlay nav {
+		margin-top: 20%;
+	}
+}
+
+@media all and (max-width: 669px) {
+  .logo-w {
+  	margin-left: 20px;
+  	margin-top: 20px;
+  	}
+  	.overlay .overlay-close {
+  		top: 35px;
+  		right: 25px;
+  	}
+  	header .logo {
+  		margin-left: 20px;
+  	}
+  	.menu {
+  		margin-right: 20px;
+  		}
+  .main .page1 {
+    background-image: url('../img/hp/slide-1-m.jpg');
+  }
+  .main .page2 {
+    background-image: url('../img/hp/slide-2-m.jpg');
+  }
+  .main .page3 {
+    background-image: url('../img/hp/slide-3-m.jpg');
+  }
+  .main .page4 {
+    background-image: url('../img/hp/slide-4-m.jpg');
+  }
+  .main .page5 {
+    background-image: url('../img/hp/slide-5-m.jpg');
+  }
+  .overlay nav {
+    margin-top: 3%;
+  }
+  .overlay-hugeinc strong {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  .overlay-hugeinc li a {
+    font-size: 28px;
+    margin-bottom: 2px;
+  }
+  header.fixed {
+    padding-top: 10px;
+  }
+  header .logo {
+    margin-top: 0;
+  }
+  .menu {
+    margin-top: 10px;
+  }
+  header.fixed .menu {
+    margin-top: 20px;
+  }
+  .button {
+    font-size: 18px;
+  }
+  .main .page_container h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .main .page_container p {
+  	margin-top: 5px;
+  }
+  .main .page_container p {
+    font-size: 14px;
+    width: 70%;
+    font-family: 'Zona Pro', serif;
+    font-weight: 100;
+  }
+  .main .page_container h1 br { display: none; }
+  .main .page1 .page_container {
+    left: 6%;
+    top: 0;
+    color: #fff;
+  }
+  .main .page2 .page_container {
+    left: 6%;
+    top: 0;
+    color: #000;
+  }
+  .main .page3 .page_container {
+    left: 6%;
+    top: 35%;
+    color: #fff;
+  }
+  .main .page4 .page_container {
+    left: 6%;
+    top: 35%;
+  }
+  .main .page5 .page_container {
+    left: 6%;
+    top: 35%;
+  }
+  .products-sel li a {
+    font-family: 'Zona Pro';
+    font-size: 15px;
+  }
+  .product-desc-cont {
+    margin: 0 auto;
+    float: none;
+    padding-top: 10px;
+  }
+  .product-desc {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .product .back {
+    position: relative;
+    left: inherit;
+    top: inherit;
+    margin: 0 auto 30px;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  footer.bottom {
+  	position: relative;
+  	margin-bottom: 0;
+  	margin-top: 50px;
+  }
+  .product-desc {
+  	padding-left: 10px;
+  	padding-right: 10px;
+  }
+  .product-desc-cont.large {
+  	width: auto;
+  }
+  .product-desc h1 {
+  	font-size: 22px;
+  }
+  .product-content {
+  	width: auto;
+  }
+  .product-desc img {
+  	display: block;
+  	margin: 20px auto 0 !important;
+  }
+  
+}
+@media all and (max-width: 669px) and (min-width: 360px) {
+  .overlay nav {
+    margin-top: 10%;
+  }
+  .overlay-hugeinc strong {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .overlay-hugeinc li a {
+    font-size: 23px;
+    margin-bottom: 0;
+  }
+  .overlay ul.nav li {
+	min-height: 30px;
+  }
+  .overlay nav {
+	height: 62%;
+	}
+  .social-media li a {
+    font-size: 12px;
+  }
+
+}
+@media all and (max-width: 480px) and (min-width: 360px) {
+
+	.left_section_33 {
+
+        width: 100%;
+     
+     }
+	
+  .products-sel li a {
+    font-size: 12px;
+  }
+  .products-sel li a.button {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 360px) {
+  .cta_cont a {
+    margin: 10px auto;
+  }
+  header .logo {
+    margin-top: 0;
+  }
+  .menu {
+    margin-top: 10px;
+  }
+  header.fixed .menu {
+    margin-top: 20px;
+  }
+  .main .page1 .page_container {
+    left: 6%;
+    top: 5%;
+  }
+  .main .page2 .page_container {
+    top: 15%;
+  }
+  .overlay nav {
+    margin-top: 18%;
+    padding-top: 10%;
+  }
+  .overlay nav {
+  	height: 60%;
+  }
+  .overlay-hugeinc.open nav ul {
+    margin-left: 0;
+  }
+  .contact-form .left, .textarea {
+    float: none;
+    width: 100%;
+  }
+  .textarea {
+    margin-bottom: 15px;
+  }
+  .products-sel li {
+    display: block;
+  }
+  .product-desc-cont {
+    width: 90%;
+    height: auto;
+  }
+  .product-desc img {
+    float: none;
+  }
+  .main .page_container h1 {
+    font-size: 34px;
+  }
+  .main .page1 .page_container {
+    left: 10%;
+    top: 25%;
+  }
+  .contact-info li {
+    width: 100%;
+    display: block;
+    margin: 10px auto 20px;
+  }
+}
