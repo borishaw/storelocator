@@ -4,12 +4,20 @@ $font-stack: 'Montserrat', "Helvetica Neue",Helvetica,Arial,sans-serif;
 $c-red: #D5373B;
 
 
-h1 {
-	font-family: $font-stack;
-	text-align: center;
-	margin: 70px 0 40px;
+//h1 {
+//	font-family: $font-stack;
+//	text-align: center;
+//	margin: 70px 0 40px;
+//}
+
+.body-locator {
+	padding-bottom: 50px;
 }
 
+// Override Bootstrap
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: transparent;
+}
 
 // Provided by Google
 
