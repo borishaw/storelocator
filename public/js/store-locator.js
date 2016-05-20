@@ -235,7 +235,8 @@
     storeLocator.Panel.prototype.idle_ = function (a) {
         this.center_ ? a.getBounds().contains(this.center_) || (this.center_ = a.getCenter(), this.listenForStoresUpdate_()) : this.center_ = a.getCenter()
     };
-    storeLocator.Panel.NO_STORES_HTML_ = '\x3cli class\x3d"no-stores"\x3eThere are no stores in this area.\x3c/li\x3e';
+    // storeLocator.Panel.NO_STORES_HTML_ = '\x3cli class\x3d"no-stores"\x3eThere are no stores in this area.\x3c/li\x3e';
+    storeLocator.Panel.NO_STORES_HTML_ = '';
     storeLocator.Panel.NO_STORES_IN_VIEW_HTML_ = '\x3cli class\x3d"no-stores"\x3eThere are no stores in this area. However, stores closest to you are listed below.\x3c/li\x3e';
     storeLocator.Panel.prototype.stores_changed = function () {
         if (this.get("stores")) {

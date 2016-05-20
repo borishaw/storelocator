@@ -24,7 +24,7 @@ google.maps.event.addDomListener(window, 'load', function () {
         center: new google.maps.LatLng(43.7181557,-79.5181424),
         zoom: 10,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
-        maxZoom: 12
+        maxZoom: 13
     });
 	
 		map.setOptions({styles: styles});
