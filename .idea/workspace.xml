@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4644ed8e-0a92-4472-ae49-19db27e0a1df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/store-locator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/getStores.php" afterPath="$PROJECT_DIR$/php/getStores.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/insertStores.php" afterPath="$PROJECT_DIR$/php/insertStores.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/locator.html" afterPath="$PROJECT_DIR$/public/locator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/locator.js" afterPath="$PROJECT_DIR$/public/js/locator.js" />
     </list>
     <ignored path="storelocator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locator.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="locator.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/locator.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="327">
               <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="locator.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/locator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -112,6 +118,7 @@
         <option value="$PROJECT_DIR$/php/getStores.php" />
         <option value="$PROJECT_DIR$/public/locator.html" />
         <option value="$PROJECT_DIR$/public/js/store-locator.js" />
+        <option value="$PROJECT_DIR$/public/js/locator.js" />
       </list>
     </option>
   </component>
@@ -179,6 +186,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="storelocator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storelocator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storelocator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storelocator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storelocator" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,12 +342,12 @@
       <workItem from="1462984772289" duration="7695000" />
       <workItem from="1463154405645" duration="654000" />
       <workItem from="1463414918772" duration="9688000" />
-      <workItem from="1463614987376" duration="1694000" />
+      <workItem from="1463614987376" duration="1940000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50400000" />
+    <option name="totallyTimeSpent" value="50646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -606,14 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/locator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/getStores.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -645,6 +676,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/locator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding />
         </state>
       </provider>
