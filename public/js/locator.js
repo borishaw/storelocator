@@ -2,6 +2,11 @@ google.maps.event.addDomListener(window, 'load', function () {
 
     var stores = [];
 
+    //Define features
+    var year_round = new storeLocator.Feature('year_round', 'Year Round');
+    var seasonal = new storeLocator.Feature('seasonal', 'Seasonal');
+    var featureSet = new storeLocator.FeatureSet(year_round, seasonal);
+
     $.ajax({
         "url": "../php/getStores.php"
     }).done(function (data) {
@@ -9,8 +14,23 @@ google.maps.event.addDomListener(window, 'load', function () {
         for (var i = 0; i < resp.length; i ++){
             var store = resp[i];
             var latLng = new google.maps.LatLng(store.x_coordinate, store.y_coordinate);
-            var storeObj = new storeLocator.Store(store.store_id, latLng, null, {
-                title: store.banner + " " + store.store_name,
+            var store_title;
+
+            var features = new storeLocator.FeatureSet;
+            if (store.year_round == 1){
+                features.add(year_round);
+            } else if (store.seasonal == 1){
+                features.add(seasonal);
+            }
+
+            if (store.store_name){
+                store_title = store.store_name;
+            } else {
+                store_title = store.banner;
+            }
+
+            var storeObj = new storeLocator.Store(store.store_id, latLng, features, {
+                title: store_title,
                 address: store.address + "<br>" + store.city + " " + store.province + " " + store.postal_code,
                 phone: store.tel
             });
@@ -38,12 +58,17 @@ google.maps.event.addDomListener(window, 'load', function () {
     var panelDiv = document.getElementById('panel');
 
     var dataFeed = new storeLocator.StaticDataFeed;
-    
+
+    //Define features
+    var year_round = new storeLocator.Feature('year_round', 'Year Round');
+    var seasonal = new storeLocator.Feature('seasonal', 'Seasonal');
+
     dataFeed.setStores(stores);
 
     var view = new storeLocator.View(map, dataFeed, {
         markerIcon: "img/map-icon.png",
-        geolocation: true
+        geolocation: true,
+        features: featureSet
     });
 
     new storeLocator.Panel(panelDiv, {

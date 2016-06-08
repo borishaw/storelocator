@@ -8,7 +8,7 @@
 
 .storelocator-panel {
   border: 1px solid #ccc;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .storelocator-panel .store-list {

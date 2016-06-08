@@ -34,6 +34,10 @@ $store = $store[0];
     <input type="text" id="x_coordinate" name="x_coordinate" value="<?php echo $store['x_coordinate'] ?>">
     <label for="y_coordinate">Y Coordinate (Longitude):</label>
     <input type="text" id="y_coordinate" name="y_coordinate" value="<?php echo $store['y_coordinate'] ?>">
+    <label for="year_round">Year Round:</label>
+    <input type="text" id="year_round" name="year_round" value="<?php echo $store['year_round'] ?>">
+    <label for="seasonal">Seasonal:</label>
+    <input type="text" id="seasonal" name="seasonal" value="<?php echo $store['seasonal'] ?>">
     <button type="submit">Update</button>
 </form>
 </body>

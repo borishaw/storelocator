@@ -3,7 +3,7 @@
 //require '../vendor/autoload.php';
 //
 //$curl     = new \Ivory\HttpAdapter\CurlHttpAdapter();
-//$geocoder = new \Geocoder\Provider\GoogleMaps($curl);
+//$geocoder = new \Geocoder\Provider\GoogleMaps($curl, null, null, true, 'AIzaSyDkXEzbEZRqoeFSGS14xMOcLF3AdAwUT0s');
 //
 //use League\Csv\Reader;
 //
@@ -12,13 +12,9 @@
 //DB::$dbName = 'hd_stores';
 //
 //
-//$csv = Reader::createFromPath('../csv/stores.csv');
+//$csv = Reader::createFromPath('stores.csv');
 //$csv->setOffset(1);
 //$result = $csv->fetchAll();
-//
-//foreach ($result as $store){
-//    var_dump($store);
-//};
 //
 //foreach ($result as $key => $row){
 //    $banner = $row[0];
