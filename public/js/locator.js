@@ -19,7 +19,9 @@ google.maps.event.addDomListener(window, 'load', function () {
             var features = new storeLocator.FeatureSet;
             if (store.year_round == 1){
                 features.add(year_round);
-            } else if (store.seasonal == 1){
+            }
+
+            if (store.seasonal == 1){
                 features.add(seasonal);
             }
 

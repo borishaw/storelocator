@@ -19,6 +19,7 @@ $stores = DB::query("SELECT * FROM store_info");
         <td>City</td>
         <td>Prov.</td>
         <td>Postal Code</td>
+        <td>Tel</td>
         <td>Edit</td>
     </tr>
     <?php foreach ($stores as $store): ?>
@@ -29,6 +30,7 @@ $stores = DB::query("SELECT * FROM store_info");
             <td><?php echo $store['city'] ?></td>
             <td><?php echo $store['province'] ?></td>
             <td><?php echo $store['postal_code'] ?></td>
+            <td><?php echo $store['tel'] ?></td>
             <td>
                 <form action="editStore.php" method="post">
                     <input type="hidden" name="store_id" value="<?php echo $store['store_id'] ?>">
